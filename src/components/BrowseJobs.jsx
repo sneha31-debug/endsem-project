@@ -1,5 +1,5 @@
-import React from 'react';
-import './BrowseJobs.css'; // Make sure this CSS file exists in the same folder
+import React, { useState } from 'react';
+import './FindJobs.css';
 
 const jobs = [
   {
@@ -36,7 +36,17 @@ const jobs = [
   },
 ];
 
-const BrowseJobs = () => {
+const FindJobs = () => {
+  const [appliedJobs, setAppliedJobs] = useState({});
+
+  const handleApply = (index) => {
+    setAppliedJobs((prev) => ({
+      ...prev,
+      [index]: true,
+    }));
+    alert('Applied Successfully!');
+  };
+
   return (
     <div className="find-jobs-container">
       <h1 className="find-jobs-title">Available Jobs</h1>
@@ -55,7 +65,14 @@ const BrowseJobs = () => {
                 <span key={i} className="job-tag">{tag}</span>
               ))}
             </div>
-            <button className="apply-button">Apply Now</button>
+
+            <button
+              className={`apply-button ${appliedJobs[index] ? 'applied' : ''}`}
+              onClick={() => handleApply(index)}
+              disabled={appliedJobs[index]}
+            >
+              {appliedJobs[index] ? 'Applied' : 'Apply Now'}
+            </button>
           </div>
         ))}
       </div>
@@ -63,5 +80,4 @@ const BrowseJobs = () => {
   );
 };
 
-export default BrowseJobs;
-
+export default FindJobs;

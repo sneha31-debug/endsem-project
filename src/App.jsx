@@ -18,14 +18,14 @@ const App = () => {
   ];
 
   const featuredJobs = [
-    { logo: '🅁', title: 'Email Marketing', company: 'Revolut • Madrid, Spain', description: 'Revolut is looking...', tags: ['Marketing', 'Design'] },
-    { logo: '🗂️', title: 'Brand Designer', company: 'Dropbox • San Francisco, US', description: 'Dropbox is looking...', tags: ['Design', 'Business'] },
-    { logo: '⚫', title: 'Email Marketing', company: 'Pitch • Berlin, Germany', description: 'Pitch is looking...', tags: ['Marketing'] },
-    { logo: '🟢', title: 'Visual Designer', company: 'Blinkist • Granada, Spain', description: 'Blinkist is looking...', tags: ['Design'] },
-    { logo: '🔵', title: 'Product Designer', company: 'ClassPass • Manchester, UK', description: 'ClassPass is looking...', tags: ['Marketing', 'Design'] },
-    { logo: '🟢', title: 'Lead Designer', company: 'Canva • Ontario, Canada', description: 'Canva is looking...', tags: ['Design', 'Business'] },
-    { logo: '🖤', title: 'Brand Strategist', company: 'GoDaddy • Marseille, France', description: 'GoDaddy is looking...', tags: ['Marketing'] },
-    { logo: '🔷', title: 'Data Analyst', company: 'Twitter • San Diego, US', description: 'Twitter is looking...', tags: ['Technology'] }
+    { title: 'Email Marketing', company: 'Revolut • Madrid, Spain', description: 'Revolut is looking...', tags: ['Marketing', 'Design'] },
+    { title: 'Brand Designer', company: 'Dropbox • San Francisco, US', description: 'Dropbox is looking...', tags: ['Design', 'Business'] },
+    { title: 'Email Marketing', company: 'Pitch • Berlin, Germany', description: 'Pitch is looking...', tags: ['Marketing'] },
+    { title: 'Visual Designer', company: 'Blinkist • Granada, Spain', description: 'Blinkist is looking...', tags: ['Design'] },
+    { title: 'Product Designer', company: 'ClassPass • Manchester, UK', description: 'ClassPass is looking...', tags: ['Marketing', 'Design'] },
+    { title: 'Lead Designer', company: 'Canva • Ontario, Canada', description: 'Canva is looking...', tags: ['Design', 'Business'] },
+    { title: 'Brand Strategist', company: 'GoDaddy • Marseille, France', description: 'GoDaddy is looking...', tags: ['Marketing'] },
+    { title: 'Data Analyst', company: 'Twitter • San Diego, US', description: 'Twitter is looking...', tags: ['Technology'] }
   ];
 
   const steps = [
@@ -78,7 +78,7 @@ const App = () => {
                 {categories.map((cat, index) => (
                   <div key={index} className="category-card">
                     <h3>{cat.name}</h3>
-                    <p>{cat.jobs} jobs available →</p>
+                    <p>{cat.jobs} jobs available</p>
                   </div>
                 ))}
               </div>
@@ -139,15 +139,15 @@ const App = () => {
             </div>
             <div className="footer-cta">
               <h2>Got a question?</h2>
-              <p>We're here to help. Check out our FAQs, send us an email or call us at 1 (800) 555-5555</p>
+              <p>We're here to help. Check out our FAQs, send us an email or call us at 555-5555</p>
             </div>
             <footer className="site-footer">
               <div className="footer-container">
                 <div className="footer-brand">
-                  <h3>Jobhunt</h3>
-                  <p>Collin Street West, Victor 8007, Australia.</p>
-                  <p>+1 246-345-0695</p>
-                  <p>info@jobhunt.com</p>
+                  <h3>ApplyPeak</h3>
+                  <p>Collin Street ,Pune,India</p>
+                  <p>246-345-0695</p>
+                  <p>info@applypeak.com</p>
                   <div className="footer-socials">
                     <i className="fab fa-facebook-f"></i>
                     <i className="fab fa-twitter"></i>
@@ -190,7 +190,7 @@ const App = () => {
                 </div>
               </div>
               <div className="footer-bottom">
-                <p>© 2018 JobHunt. All rights reserved. Design by Madras Themes</p>
+                <p>© ApplyPeak designed by Sneha</p>
               </div>
             </footer>
           </div>

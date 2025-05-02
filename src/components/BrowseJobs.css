@@ -95,4 +95,20 @@
     background-color: #0369a1;
   }
   
+  .applied {
+    background-color: #34d399;
+    color: white;
+  }
+  
+  .cancelled-status {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .applied-status {
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
   
